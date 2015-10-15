@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using Domain.BaseModel;
+using HY.Domain.BaseModel;
 
-namespace Domain.Repositories.IRepositories
+namespace HY.Domain.Repositories.IRepositories
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : class, IAggregateRoot
     {
-        IQueryable<TEntity> Get();
+        IEnumerable<TEntity> Get();
 
-        IQueryable<TEntity> GetByCondition(Func<TEntity, bool> expression);
+        IEnumerable<TEntity> GetByCondition(Func<TEntity, bool> expression);
 
         TEntity GetById(long pkid);
 

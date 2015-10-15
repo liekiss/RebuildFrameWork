@@ -1,4 +1,4 @@
-namespace Domain.BaseModel
+namespace HY.Domain.BaseModel
 {
     public interface IEntity
     {

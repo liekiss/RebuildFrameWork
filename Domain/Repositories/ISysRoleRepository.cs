@@ -1,10 +1,9 @@
-﻿using Domain.Model;
-using Domain.Repositories.IRepositories;
+﻿using HY.Domain.Model;
+using HY.Domain.Repositories.IRepositories;
 
-namespace Domain.Repositories
+namespace HY.Domain.Repositories
 {
     public interface ISysRoleRepository : IRepository<SysRole>
     {
-
     }
 }

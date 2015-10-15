@@ -1,7 +1,7 @@
 ﻿using System.Security.AccessControl;
-using Domain.BaseModel;
+using HY.Domain.BaseModel;
 
-namespace Domain.Model
+namespace HY.Domain.Model
 {
     public class SysUserRole : AggregateRoot
     {
